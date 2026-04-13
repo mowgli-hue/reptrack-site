@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RepTrack Support</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;color:#0f172a;background:#f8fafc}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 40px;background:#fff;border-bottom:1px solid #e2e8f0}
+.nav-logo{display:flex;align-items:center;gap:10px}
+.logo-icon{background:#dc2626;color:white;font-weight:900;font-size:14px;width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center}
+.logo-text{font-size:17px;font-weight:900;color:#0f172a}
+.nav a{font-size:13px;color:#64748b;text-decoration:none}
+.nav a:hover{color:#dc2626}
+.hero{background:#0f172a;padding:60px 40px;text-align:center}
+.hero h1{font-size:36px;font-weight:900;color:white;margin-bottom:10px}
+.hero p{color:#94a3b8;font-size:16px;margin-bottom:28px}
+.search-wrap{max-width:500px;margin:0 auto;position:relative}
+.search-wrap input{width:100%;padding:14px 20px;border-radius:10px;border:none;font-size:15px;outline:none}
+.content{max-width:900px;margin:0 auto;padding:50px 20px}
+.section-title{font-size:22px;font-weight:900;margin-bottom:20px;color:#0f172a}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:50px}
+.card{background:#fff;border-radius:12px;padding:24px;border:1px solid #e2e8f0;text-decoration:none;display:block}
+.card:hover{border-color:#dc2626;transform:translateY(-2px);transition:all 0.2s}
+.card-icon{font-size:28px;margin-bottom:12px}
+.card h3{font-size:15px;font-weight:800;color:#0f172a;margin-bottom:6px}
+.card p{font-size:13px;color:#64748b;line-height:1.5}
+.faq-section{background:#fff;border-radius:14px;padding:32px;margin-bottom:30px;border:1px solid #e2e8f0}
+.faq-item{border-bottom:1px solid #f1f5f9;padding:18px 0}
+.faq-item:last-child{border-bottom:none;padding-bottom:0}
+.faq-item h3{font-size:15px;font-weight:700;margin-bottom:8px;color:#0f172a}
+.faq-item p{font-size:14px;color:#64748b;line-height:1.65}
+.faq-item code{background:#f1f5f9;padding:2px 6px;border-radius:4px;font-size:12px;color:#dc2626}
+.contact-box{background:#0f172a;border-radius:14px;padding:36px;text-align:center;color:white}
+.contact-box h2{font-size:24px;font-weight:900;margin-bottom:10px}
+.contact-box p{color:#94a3b8;margin-bottom:24px;font-size:15px}
+.btn-email{background:#dc2626;color:white;padding:13px 30px;border-radius:9px;font-weight:700;font-size:14px;text-decoration:none;display:inline-block}
+.btn-email:hover{background:#b91c1c}
+.footer{text-align:center;padding:30px;color:#94a3b8;font-size:13px}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-logo">
+    <div class="logo-icon">RT</div>
+    <div class="logo-text">RepTrack</div>
+  </div>
+  <div style="display:flex;gap:24px;align-items:center">
+    <a href="index.html">Home</a>
+    <a href="#pricing">Pricing</a>
+    <a href="mailto:support@reptrack.ca">Contact</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <h1>How can we help?</h1>
+  <p>Search our knowledge base or browse common topics below</p>
+  <div class="search-wrap">
+    <input type="text" placeholder="Search for help..." />
+  </div>
+</div>
+
+<div class="content">
+
+  <p class="section-title">Browse by topic</p>
+  <div class="cards">
+    <a href="#getting-started" class="card">
+      <div class="card-icon">🚀</div>
+      <h3>Getting started</h3>
+      <p>Install RepTrack and activate your license key</p>
+    </a>
+    <a href="#scanning" class="card">
+      <div class="card-icon">🔍</div>
+      <h3>Running a scan</h3>
+      <p>How to scan your IRCC portal and download PDFs</p>
+    </a>
+    <a href="#license" class="card">
+      <div class="card-icon">🔑</div>
+      <h3>License & billing</h3>
+      <p>Manage your subscription and license key</p>
+    </a>
+    <a href="#pdfs" class="card">
+      <div class="card-icon">📄</div>
+      <h3>PDF downloads</h3>
+      <p>Where PDFs are saved and how naming works</p>
+    </a>
+    <a href="#errors" class="card">
+      <div class="card-icon">⚠️</div>
+      <h3>Troubleshooting</h3>
+      <p>Fix common errors and connection issues</p>
+    </a>
+    <a href="#team" class="card">
+      <div class="card-icon">👥</div>
+      <h3>Team access</h3>
+      <p>Add team members and share your license</p>
+    </a>
+  </div>
+
+  <p class="section-title" id="getting-started">Getting started</p>
+  <div class="faq-section">
+    <div class="faq-item">
+      <h3>How do I install RepTrack?</h3>
+      <p>Search for "RepTrack" in the Chrome Web Store and click "Add to Chrome". Once installed you will see the RT icon in your Chrome toolbar. Click it and enter your license key to activate.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Where do I get my license key?</h3>
+      <p>After payment your license key is emailed to you automatically. It looks like <code>R-705964</code>. Check your spam folder if you don't see it within a few minutes.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How do I activate my license?</h3>
+      <p>Click the RT icon in Chrome toolbar → enter your license key → click Activate License. You only need to do this once per computer.</p>
+    </div>
+  </div>
+
+  <p class="section-title" id="scanning">Running a scan</p>
+  <div class="faq-section">
+    <div class="faq-item">
+      <h3>How do I start a scan?</h3>
+      <p>1. Log into your IRCC representative portal. 2. Go to your application search results page. 3. Set entries to show 250 per page. 4. Click the RT icon → click Start Scan. RepTrack does the rest automatically.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How long does a scan take?</h3>
+      <p>A full scan of 2,000+ applications takes approximately 30-40 minutes. You can leave it running in the background while you work on other things.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I stop a scan midway?</h3>
+      <p>Yes — click the RT icon and click Stop Scan at any time. All results found so far are saved and PDFs already downloaded are remembered so they won't be downloaded again next time.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What does "Skipped" mean in the panel?</h3>
+      <p>Skipped means RepTrack found a message that was already downloaded in a previous scan. It skips it to avoid duplicates. This is normal and expected behaviour.</p>
+    </div>
+  </div>
+
+  <p class="section-title" id="pdfs">PDF downloads</p>
+  <div class="faq-section">
+    <div class="faq-item">
+      <h3>Where are PDFs saved?</h3>
+      <p>PDFs are saved to your computer's Downloads folder automatically. They are named in the format: <code>DATE_APPNUMBER_NAME_MESSAGETYPE.pdf</code> for easy filing.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Why are some messages not downloading as PDFs?</h3>
+      <p>Some IRCC messages do not have a PDF attached yet — they show as "New Message" in the portal but the PDF link shows as "#". This is an IRCC portal limitation, not a RepTrack issue. RepTrack will detect these messages and record them in your CSV report.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Will RepTrack download the same PDF twice?</h3>
+      <p>No. RepTrack remembers every PDF it has downloaded using a unique message ID. If you run the scan again the same day or the next day, already downloaded PDFs are automatically skipped.</p>
+    </div>
+  </div>
+
+  <p class="section-title" id="errors">Troubleshooting</p>
+  <div class="faq-section">
+    <div class="faq-item">
+      <h3>I see "Connection error" when entering my license key</h3>
+      <p>This usually means the extension needs to be updated. Go to <code>chrome://extensions</code>, find RepTrack and click Update. Then try again.</p>
+    </div>
+    <div class="faq-item">
+      <h3>The scan shows 400 errors in the console</h3>
+      <p>400 errors happen when the IRCC portal session token expires during a long scan. RepTrack automatically retries up to 3 times. If errors persist, refresh the portal page and start a new scan.</p>
+    </div>
+    <div class="faq-item">
+      <h3>The scan stopped halfway through</h3>
+      <p>This can happen if your internet connection dropped or your IRCC session expired. Simply refresh the portal page and start the scan again — already downloaded PDFs will be skipped so no duplicates.</p>
+    </div>
+    <div class="faq-item">
+      <h3>RepTrack is not detecting new messages</h3>
+      <p>Make sure you are on the IRCC representative portal search results page showing 250 entries per page. If the issue persists please contact support at <code>support@reptrack.ca</code>.</p>
+    </div>
+  </div>
+
+  <p class="section-title" id="license">License & billing</p>
+  <div class="faq-section">
+    <div class="faq-item">
+      <h3>How do I cancel my subscription?</h3>
+      <p>Email us at <code>support@reptrack.ca</code> with your license key and we will cancel your subscription immediately. No questions asked.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I use my license on multiple computers?</h3>
+      <p>Yes. Your license key can be used on multiple computers at your firm. Simply enter the same key on each computer.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How do I renew my license?</h3>
+      <p>Monthly licenses renew automatically. Annual licenses will receive a renewal reminder email 30 days before expiry.</p>
+    </div>
+  </div>
+
+  <p class="section-title" id="team">Team access</p>
+  <div class="faq-section">
+    <div class="faq-item">
+      <h3>How do I add team members?</h3>
+      <p>Simply share your license key with your team members. They install RepTrack from the Chrome Web Store and enter the same key to activate. The monthly plan supports up to 5 team members. The annual plan supports unlimited team members.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Will team members download duplicate PDFs?</h3>
+      <p>No. RepTrack memory is stored locally per computer. We recommend running the scan from one dedicated computer per day to avoid duplicates across team members.</p>
+    </div>
+  </div>
+
+  <div class="contact-box">
+    <h2>Still need help?</h2>
+    <p>Our support team typically responds within a few hours on business days.</p>
+    <a href="mailto:support@reptrack.ca" class="btn-email">Email support@reptrack.ca</a>
+  </div>
+
+</div>
+
+<div class="footer">
+  © 2026 RepTrack. All rights reserved. · <a href="index.html" style="color:#94a3b8">Home</a>
+</div>
+
+</body>
+</html>
